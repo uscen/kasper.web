@@ -78,7 +78,7 @@ header .container::after {
   bottom: 0;
   left: 15px;
   width: calc(100% - 30px);
-  height: 2px;
+  height: 1px;
   background: var(--muted-color);
 }
 header .container .logo {
@@ -194,6 +194,15 @@ header .container nav .form-search i {
   max-width: 500px;
   min-width: 200px;
 }
+@media (max-width: 767px) {
+  .landing .overlay .text {
+    width: 100%;
+  }
+  .landing .text .content {
+    max-width: 100%;
+    min-width: auto;
+  }
+}
 .landing .overlay .text .content h1 {
   font-size: 22px;
   font-weight: normal;
@@ -215,18 +224,23 @@ header .container nav .form-search i {
   cursor: pointer;
 }
 .landing .overlay .change-background.change-left {
-  left: 10px;
+  left: 25px;
 }
 .landing .overlay .change-background.change-right {
-  right: 10px;
+  right: 25px;
 }
 .landing .overlay .bullets {
   position: absolute;
-  bottom: 10px;
+  bottom: 25px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
   gap: 10px;
+}
+@media (max-width: 767px) {
+  .landing .overlay .change-background {
+    display: none;
+  }
 }
 .landing .overlay .bullets li {
   width: 15px;
@@ -237,4 +251,5 @@ header .container nav .form-search i {
 }
 .landing .overlay .bullets li.active {
   background-color: var(--main-color);
+  border-color: var(--main-color);
 }
