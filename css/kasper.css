@@ -64,6 +64,7 @@ ul {
   font-weight: 900;
   position: relative;
   padding: 20px 10px;
+  margin-bottom: 50px;
 }
 .special-heading::before {
   content: "";
@@ -86,6 +87,13 @@ ul {
   border-radius: 50%;
   border: 2px solid #333;
   background-color: white;
+}
+.special-heading + p {
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto 100px;
+  line-height: var(--text-height);
+  color: var(--muted-color);
 }
 /* End Components */
 
