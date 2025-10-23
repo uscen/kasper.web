@@ -61,7 +61,7 @@ ul {
   text-align: center;
   text-transform: uppercase;
   font-size: 28px;
-  font-weight: 900;
+  font-weight: 600;
   position: relative;
   padding: 20px 10px;
   margin-bottom: 50px;
@@ -295,8 +295,28 @@ header .container nav .form-search i {
   border-color: var(--main-color);
 }
 /* Start Services */
-.service {
+.services {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
+}
+.services .container .service-holder {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+}
+.services .container .service-holder .serv {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.services .container .service-holder .serv .serv-content h3 {
+  color: var(--main-color);
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+.services .container .service-holder .serv .serv-content h3 + p {
+  color: var(--muted-color);
+  line-height: var(--text-height);
+  font-size: 18px;
 }
 /* End Services */
