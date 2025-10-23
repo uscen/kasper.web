@@ -299,15 +299,23 @@ header .container nav .form-search i {
   padding-top: var(--section-padding);
   padding-bottom: var(--section-padding);
 }
-.services .container .service-holder {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+@media (min-width: 768px) {
+  .services .container .service-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
 }
 .services .container .service-holder .serv {
   display: flex;
   gap: 40px;
   margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .services .container .service-holder .serv {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .services .container .service-holder .serv .serv-content h3 {
   color: var(--main-color);
