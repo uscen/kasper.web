@@ -1,10 +1,12 @@
 /* Start Variables */
 :root {
   --main-color: #19c8fa;
-  --transprent-color: rgb(15 116 143 / 70%);
   --muted-color: #a2a2a2;
+  --transprent-color: rgb(15 116 143 / 70%);
   --transition-duration: 0.3s;
+  --section-padding: 60px;
   --text-height: 1.7;
+  --main-rounded: 6px;
 }
 /* End Variables */
 
@@ -54,6 +56,36 @@ ul {
   .container {
     width: 1170px;
   }
+}
+.special-heading {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 900;
+  position: relative;
+  padding: 20px 10px;
+}
+.special-heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--muted-color);
+  height: 2px;
+  width: 120px;
+}
+.special-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid var(--muted-color);
+  background-color: white;
 }
 /* End Components */
 
@@ -116,7 +148,8 @@ header .container nav ul {
     left: 15px;
     top: 100%;
     width: calc(100% - 30px);
-    background: var(--transprent-color);
+    background: rgb(0 0 0 / 50%);
+    border-radius: var(--main-rounded);
   }
 }
 header .container nav ul li {
