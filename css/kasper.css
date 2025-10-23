@@ -358,6 +358,11 @@ header .container nav .form-search i {
   position: relative;
   flex: 1;
 }
+@media (max-width: 767px) {
+  .design .design-img {
+    display: none;
+  }
+}
 .design .design-img {
   bottom: -120px;
   text-align: center;
@@ -368,6 +373,7 @@ header .container nav .form-search i {
   padding: 50px 60px;
 }
 .design .design-content h3 {
+  text-transform: uppercase;
   margin-bottom: 20px;
   font-size: 22px;
 }
@@ -385,5 +391,7 @@ header .container nav .form-search i {
   font-weight: 900;
   display: inline-block;
   margin-right: 10px;
+  position: relative;
+  top: 1px;
 }
 /* End Our-design */
