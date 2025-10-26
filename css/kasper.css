@@ -712,20 +712,22 @@ header .container nav .form-search i {
 .our-skills .container .skills .progress-container .prog-content span::before {
   content: attr(data-progress);
   position: absolute;
-  top: -100%;
-  right: -17px;
-  padding: 5px;
+  top: -90%;
+  right: -15px;
+  padding: 2px;
   background-color: black;
   color: white;
   font-size: small;
   font-weight: bold;
+  border: 2px solid black;
 }
 .our-skills .container .skills .progress-container .prog-content span::after {
   content: "";
   position: absolute;
-  top: calc(-100% + 24.5px);
-  right: -9px;
+  top: calc(-100% + 26px);
+  right: -6px;
   border-color: black transparent transparent transparent;
-  border-width: 8px;
+  border-width: 7px;
   border-style: solid;
 }
+/* End Our-skills */
