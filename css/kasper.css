@@ -715,7 +715,7 @@ header .container nav .form-search i {
 .our-skills .container .skills .progress-container .prog-content span::before {
   content: attr(data-progress);
   position: absolute;
-  top: -90%;
+  top: -82%;
   right: -15px;
   padding: 2px;
   background-color: black;
@@ -723,14 +723,15 @@ header .container nav .form-search i {
   font-size: small;
   font-weight: bold;
   border: 2px solid black;
+  border-radius: 4px;
 }
 .our-skills .container .skills .progress-container .prog-content span::after {
   content: "";
   position: absolute;
-  top: calc(-100% + 26px);
+  top: calc(-100% + 30px);
   right: -6px;
   border-color: black transparent transparent transparent;
-  border-width: 7px;
+  border-width: 8px;
   border-style: solid;
 }
 /* End Our-skills */
