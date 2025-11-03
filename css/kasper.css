@@ -648,8 +648,8 @@ header .container nav .form-search i {
 .our-skills .container .testimonails .box {
   display: flex;
   gap: 30px;
-  margin-bottom: 40px;
-  padding: 20px 0;
+  margin-bottom: 60px;
+  padding: 35px 0;
 }
 .our-skills .container .testimonails .box img {
   width: 60px;
@@ -668,6 +668,9 @@ header .container nav .form-search i {
 .our-skills .container .testimonails .box .text {
   line-height: var(--text-height);
   border-bottom: 1px solid var(--muted-color);
+}
+.our-skills .container .testimonails .box p {
+  line-height: 2;
 }
 .our-skills .container .testimonails .box .text small {
   display: block;
