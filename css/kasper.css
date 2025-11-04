@@ -843,15 +843,15 @@ header .container nav .form-search i {
 .pricing .pricing-plans .plan .plan-head span::before {
   content: "$";
   position: absolute;
-  top: 0;
-  left: -20px;
+  top: 20px;
+  left: -15px;
   font-size: 18px;
 }
 .pricing .pricing-plans .plan .plan-head span::after {
   content: "/mo";
   position: absolute;
-  bottom: 0;
-  right: -40px;
+  bottom: 10px;
+  right: -30px;
   font-size: 18px;
 }
 .pricing .pricing-plans .plan .plan-body {
