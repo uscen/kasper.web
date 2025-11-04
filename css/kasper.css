@@ -943,7 +943,6 @@ header .container nav .form-search i {
   position: relative;
   color: white;
   display: flex;
-  align-items: center;
   gap: 40px;
   padding: 50px 15px;
 }
@@ -1005,6 +1004,7 @@ header .container nav .form-search i {
   font-size: 15px;
   max-width: 500px;
   text-align: center;
+  margin: 0 auto;
 }
 /* End Subscribe */
 
